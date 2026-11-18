@@ -22,3 +22,15 @@ Both tools processed the *same* recording. Private test; do not repost without t
 - Caveat: n=1 stream, 8 minutes, 1 clipper clip. Not statistically meaningful; the skill's picks were chosen by me, not purely automatic.
 
 Files: comparison/clipper/, comparison/skill/ (video and preview files are kept local, not committed: third-party stream footage).
+
+## Run 2 — twitch.tv/xqc (GTA VI), ~25 min recorded (3 chunks, 17:11–17:50 UTC)
+| | Clipper | Skill |
+|---|---|---|
+| Output | 1 clip (167-msg spike at 17:31:45) | 4 shorts picked by me from 12 scored windows |
+| Content | Quiet in-game dialogue scene, no reaction | Merch-loss reaction, story scene, chase, bank scene |
+| Time | real time | ~4 min transcribe + ~4 min render |
+
+- Busy chat raised the clipper's spike threshold to ~200 msgs/10s, so it fired rarely.
+- Much of the footage was cutscene dialogue; the skill's hype scores mostly flagged cutscene audio. Neither tool clearly found a viral moment.
+- Clipper background runs stopped after ~5 min twice (likely killed when the session idles); run in 10-min foreground chunks instead.
+- Media for this run is kept local (comparison/xqc/), not committed.
